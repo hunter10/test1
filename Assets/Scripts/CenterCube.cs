@@ -27,10 +27,8 @@ public class CenterCube : MonoBehaviour {
 
     public void MoveToUser()
     {
-        Debug.Log(_userPos[0].position);
-        //_cardDesk[_cardDesk.Count-1].GetComponent<CardBase>().StartMove(_userPos[0]);
-
-        Debug.Log(_cardDesk[_cardDesk.Count - 1].GetComponent<CardBase>().originalPos);
+        _cardDesk[0].GetComponent<CardBase>().StartMove(_userPos[0]);
+        _cardDesk[1].GetComponent<CardBase>().StartMove(_userPos[1]);
     }
 }
 

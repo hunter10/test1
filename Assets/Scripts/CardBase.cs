@@ -15,7 +15,7 @@ public class CardBase : MonoBehaviour {
     {
         Tween myTween = transform.DOMove(dest.position, 0.5f);
         myTween.SetEase(Ease.InOutQuint);
-        myTween.OnComplete(myFunction);
+        //myTween.OnComplete(myFunction);
     }
 
     void myFunction()
